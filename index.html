@@ -40,7 +40,6 @@
   .stats-grid .table-container { flex: 0 0 auto; max-width: 100%; overflow-x: auto; }
   /* Avoid overflow on desktop: subtract gaps from column width */
   @media screen and (min-width: 1024px) {
-    .stats-grid { gap: 1rem; margin-left: 0 !important; margin-right: 0 !important; }
     .stats-grid .column.is-4-desktop {
       flex: 0 0 calc((100% - 2rem) / 3);
       max-width: calc((100% - 2rem) / 3);
@@ -48,6 +47,8 @@
   }
   /* LLM QA example image */
   .qa-image { display: block; margin: 0 auto; width: 100%; max-width: 900px; height: auto; }
+  /* Center example video */
+  .video-center { display: block; margin: 0 auto; max-width: 100%; }
 </style>
 
 
@@ -215,7 +216,15 @@
         </div>
       </div>
 
-      
+      <!-- example video -->
+       <div class="is-centered has-text-centered">
+         <h3 class="title is-4">Example Video</h3>
+       </div>
+       <div class="hero-body has-text-centered">
+         <video class="video-center" width="60%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+           <source src="./assets/videos/example_video.mp4" type="video/mp4">
+         </video>
+       </div>
 
       <div class="is-centered has-text-centered">
         <h3 class="title is-4">Edit Pipeline</h3>   

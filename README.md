@@ -2,7 +2,7 @@
 
 **Taming Hallucinations: Boosting MLLMs’ Video Understanding via Counterfactual Video Generation**
 
-## 🏠 [Project Page](https://amap-ml.github.io/Taming-Hallucinations/) | [Paper](link)
+## 🏠 [Project Page](https://amap-ml.github.io/Taming-Hallucinations/) | [Paper](https://arxiv.org/pdf/2512.24271)
 
 **TL;DR**: Taming Hallucinations introduces **DualityForge**, a controllable diffusion-based framework that turns real videos into counterfactual ones, automatically generating paired videos and QA data for contrastive training. Based on the large-scale **DualityVidQA** dataset and the proposed **DNA-Train** SFT–RL regime with ℓ1-normalized advantages, our approach reduces hallucinations in multimodal LLMs by 24% and shows strong generalization across benchmarks. Dataset and code will be released.
 
@@ -18,5 +18,10 @@
 If you find this repository useful, please consider citing:
 
 ```
-
+@article{huang2025taming,
+  title={Taming Hallucinations: Boosting MLLMs' Video Understanding via Counterfactual Video Generation},
+  author={Huang, Zhe and Wen, Hao and Hao, Aiming and Song, Bingze and Wu, Meiqi and Wu, Jiahong and Chu, Xiangxiang and Lu, Sheng and Wang, Haoqian},
+  journal={arXiv preprint arXiv:2512.24271},
+  year={2025}
+}
 ```
